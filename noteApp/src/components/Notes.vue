@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         removeNodes(index){
-            console.log(`Note id - ${index} remover`)
+            //console.log(`Note id - ${index} remover`)
             this.$emit('remove', index)
         }
     }
