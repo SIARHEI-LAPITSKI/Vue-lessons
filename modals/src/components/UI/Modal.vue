@@ -2,13 +2,18 @@
   <transition name="modal">
     <div class="modal__wrapper" @click="$emit('close')">
       <div class="modal-content" @click.stop="">
+
+        <!--modal-header-->
         <div class="modal-header">
-          <span class="modal-title"> {{ title }} </span>
-          <span class="button-close" @click="$emit('close')">×</span>
+          <span class="modal-title">{{title}}</span>
+          <span @click="$emit('close')" class="button-close">×</span>
         </div>
+
+        <!--modal-body-->
         <div class="modal-body">
-          <slot name="body">default body</slot>
+          <slot name="body"> defauld body </slot>
         </div>
+
       </div>
     </div>
   </transition>
@@ -22,18 +27,17 @@ export default {
       required: true
     }
   },
-  data () {
-    return {}
-  },
-  mounted () {
+  mounted() {
     document.body.addEventListener('keyup', e => {
-      if (e.keyCode === 27) {
-        this.$emit('close')
-      }
+      if (e.keyCode === 27) this.$emit('close')
     })
   },
-  computed: {},
-  methods: {}
+  computed: {
+
+  },
+  methods: {
+
+  }
 }
 </script>
 
