@@ -46,11 +46,15 @@
                             </div>
                         </Modal>
                     </div>
+
+
+
                     <br>
                     <div>
                         <!--modal with validate-->
-                        <button @click="modalValidate = !modalValidate" class="btn btnPrimary">Show second modal</button>
-                        <ModalValidate v-show="modalValidate" @close="modalValidate = false" />
+                        <button class="btn btnPrimary" @click="modalValidate = !modalValidate">Show modal with form + validate</button>
+                        <ModalValidate v-show="modalValidate" @close="modalValidate = false"/>
+
                     </div>
 
                 </div>

@@ -20,7 +20,7 @@
 <script>
     import Modals from "./UI/Modal";
     export default {
-        comments: {
+        components: {
             Modals
         }
     }
