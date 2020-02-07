@@ -4,29 +4,29 @@
         <div class="wrapper-content">
             <section>
                 <div class="container">
-                   
+
                     <!-- message -->
-                    <message 
-                        v-if="message" 
-                        :message="message" 
+                    <message
+                            v-if="message"
+                            :message="message"
                     />
 
                     <!-- new note -->
-                    <NewNote 
-                        :note="note" 
-                        @addNote="addNote" 
+                    <NewNote
+                            :note="note"
+                            @addNote="addNote"
                     />
-                    
-                    
+
+
                     <div class="note-header">
                         <!-- title  -->
                         <h1>{{title}}</h1>
 
                         <!-- search -->
-                        <Search 
-                            :value="search"
-                            placeholder="Find your note"
-                            @search="search = $event"
+                        <Search
+                                :value="search"
+                                placeholder="Find your note"
+                                @search="search = $event"
                         />
 
                         <!-- icons controls -->
@@ -37,10 +37,10 @@
                     </div>
 
                     <!-- note list -->
-                    <Notes 
-                        :notes="notesFilter"
-                        @remove="removeNote"
-                        :grid="grid"
+                    <Notes
+                            :notes="notesFilter"
+                            @remove="removeNote"
+                            :grid="grid"
                     />
                 </div>
             </section>
@@ -90,7 +90,7 @@
                 ]
             }
         },
-        computed: { 
+        computed: {
             notesFilter(){
                 let array = this.notes,
                     search = this.search
