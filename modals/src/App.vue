@@ -13,7 +13,9 @@
                                 @close="modalFirst = false"
                         >
                             <div slot="body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda autem blanditiis consequatur ducimus fuga ipsa modi mollitia nihil odio placeat quaerat, quasi quia quidem, quis rem sint suscipit.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto assumenda
+                                    autem blanditiis consequatur ducimus fuga ipsa modi mollitia nihil odio placeat
+                                    quaerat, quasi quia quidem, quis rem sint suscipit.</p>
                                 <br>
                                 <button
                                         class="btn btnPrimary"
@@ -27,7 +29,8 @@
                     <br>
                     <div>
                         <!--second modal-->
-                        <button @click="modalSecond.show = !modalSecond.show" class="btn btnPrimary">Show second modal</button>
+                        <button @click="modalSecond.show = !modalSecond.show" class="btn btnPrimary">Show second modal
+                        </button>
                         <Modal
                                 title="Modal with form"
                                 v-show="modalSecond.show"
@@ -48,11 +51,12 @@
                     </div>
 
 
-
                     <br>
                     <div>
                         <!--modal with validate-->
-                        <button class="btn btnPrimary" @click="modalValidate = !modalValidate">Show modal with form + validate</button>
+                        <button class="btn btnPrimary" @click="modalValidate = !modalValidate">Show modal with form +
+                            validate
+                        </button>
                         <ModalValidate v-show="modalValidate" @close="modalValidate = false"/>
 
                     </div>
@@ -74,8 +78,8 @@
             Modal,
             ModalValidate
         },
-        data(){
-            return{
+        data() {
+            return {
                 modalFirst: false,
                 modalSecond: {
                     show: false,
@@ -86,7 +90,7 @@
             }
         },
         methods: {
-            sumbitSecondForm(){
+            sumbitSecondForm() {
                 console.log({
                     name: this.modalSecond.name,
                     email: this.modalSecond.email
