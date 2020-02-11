@@ -6,7 +6,7 @@
                     <div class="navbar-content">
                         <div class="logo">
                             <a href="/">
-                                VUE-CLI
+                                Notify
                             </a>
                         </div>
                         <ul class="navbar-list">
@@ -33,8 +33,8 @@
                         url: '/'
                     },
                     {
-                        title: 'Users',
-                        url: '/users'
+                        title: 'Notify',
+                        url: '/notifyPage'
                     }
                 ]
             }
