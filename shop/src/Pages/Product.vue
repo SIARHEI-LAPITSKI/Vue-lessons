@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="product__wrapper">
 
-<!--                    slider-->
+                    <!--                    slider-->
                     <div class="product-slider">
 
                         <carousel
@@ -20,7 +20,7 @@
                     </div>
 
 
-<!--                    content-->
+                    <!--                    content-->
                     <div class="product-content">
                         <h1 class="title">{{ product.title }}</h1>
                         <p>{{ product.description }}</p>
@@ -40,7 +40,6 @@
             }
         },
         created() {
-
             let id = this.$route.params.id;
             this.product = this.$store.getters.getProduct(id);
             //console.log(this.product)
@@ -49,11 +48,11 @@
 </script>
 
 <style lang="scss">
-.product__wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .product__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .product-slider,
     .product-content{
         width: 48%;

@@ -6,7 +6,7 @@
                     <div class="navbar-content">
                         <div class="logo">
                             <a href="/">
-                                VUE-CLI
+                                Users CRM
                             </a>
                         </div>
                         <ul class="navbar-list">
@@ -33,8 +33,8 @@
                         url: '/'
                     },
                     {
-                        title: 'Shop',
-                        url: '/shop'
+                        title: 'Users',
+                        url: '/users'
                     }
                 ]
             }
@@ -48,4 +48,7 @@
             color: #5247e7;
         }
     }
+
+
+
 </style>
