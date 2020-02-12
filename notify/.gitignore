@@ -4,3 +4,4 @@
 *.xml
 src/.idea/src.iml
 .idea/yellmed.iml
+/node_modules/
